@@ -23,7 +23,7 @@ class Order: ObservableObject {
     func add(item: MenuItem) {
         items.append(item)
     }
-
+ 
     func remove(item: MenuItem) {
         if let index = items.firstIndex(of: item) {
             items.remove(at: index)
