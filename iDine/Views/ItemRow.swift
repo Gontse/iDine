@@ -21,7 +21,7 @@ struct ItemRow: View {
       
         Text(item.name)
           .font(.headline)
-        Text("$\(item.price)")
+        Text("R\(item.price)")
       }
       Spacer()
       ForEach(item.restrictions, id: \.self) { restriction in
